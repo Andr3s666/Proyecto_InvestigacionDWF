@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @Setter
 @NoArgsConstructor
 public class Atraccion {
+
     private String nombre;
     private int capacidad;
     private int edadMinima;

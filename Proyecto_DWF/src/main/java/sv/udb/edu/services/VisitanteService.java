@@ -11,11 +11,7 @@ public class VisitanteService {
     @Autowired
     private VisitanteRepository visitanteRepository;
 
-    public Visitante crearVisitante(Visitante visitante) {
+    public Visitante registrarVisitante(Visitante visitante) {
         return visitanteRepository.save(visitante);
-    }
-
-    public Visitante obtenerVisitante(Long id) {
-        return visitanteRepository.findById(id).orElseThrow(() -> new RuntimeException("Visitante no encontrado"));
     }
 }

@@ -12,7 +12,7 @@ public class CasaDelTerror extends Atraccion {
 
 
     public CasaDelTerror(String nombre, int capacidad, int edadMinima, EstadoAtraccion estado, boolean tieneEfectosEspeciales) {
-        super(nombre, capacidad, edadMinima, estado); // Cambié 'estado' a tipo EstadoAtraccion
+        super(nombre, capacidad, edadMinima, estado);
         this.tieneEfectosEspeciales = tieneEfectosEspeciales;
     }
 }

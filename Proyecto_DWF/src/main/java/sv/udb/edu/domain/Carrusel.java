@@ -12,7 +12,7 @@ public class Carrusel extends Atraccion {
 
 
     public Carrusel(String nombre, int capacidad, int edadMinima, EstadoAtraccion estado, int numeroDeCaballos) {
-        super(nombre, capacidad, edadMinima, estado); // Pasar EstadoAtraccion en lugar de String
+        super(nombre, capacidad, edadMinima, estado);
         this.numeroDeCaballos = numeroDeCaballos;
     }
 }

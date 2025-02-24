@@ -10,12 +10,13 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
+
 public class Visitante {
     private String nombre;
     private int edad;
     private List<Boleto> listaDeBoletos;
 
-   
+
     public Visitante(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;

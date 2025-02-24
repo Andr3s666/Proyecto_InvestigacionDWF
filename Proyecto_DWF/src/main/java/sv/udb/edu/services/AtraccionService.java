@@ -3,6 +3,7 @@ package sv.udb.edu.services;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import sv.udb.edu.domain.Atraccion;
+import sv.udb.edu.domain.Visitante;
 import sv.udb.edu.repository.AtraccionRepository;
 
 @Service
@@ -25,5 +26,17 @@ public class AtraccionService {
         Atraccion atraccion = obtenerAtraccionPorId(id);
         atraccion.setEstado(Atraccion.EstadoAtraccion.MANTENIMIENTO);
         atraccionRepository.save(atraccion);
+    }
+
+
+    public boolean ingresarAtraccion(Long id, Visitante visitante) {
+        Atraccion atraccion = obtenerAtraccionPorId(id);
+
+
+        if (visitante.getEdad() >= atraccion.getEdadMinima()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

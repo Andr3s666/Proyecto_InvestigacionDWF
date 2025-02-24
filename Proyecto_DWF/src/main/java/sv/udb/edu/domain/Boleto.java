@@ -12,7 +12,7 @@ public class Boleto {
     private double precio;
     private Visitante visitante;
 
-    // Constructor con parámetros
+
     public Boleto(String tipo, double precio, Visitante visitante) {
         this.tipo = tipo;
         this.precio = precio;

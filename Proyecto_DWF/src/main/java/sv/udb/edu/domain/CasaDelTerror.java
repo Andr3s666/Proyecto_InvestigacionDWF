@@ -6,11 +6,11 @@ import lombok.NoArgsConstructor;
 
 @Getter
 @Setter
-@NoArgsConstructor  // Constructor sin parámetros
+@NoArgsConstructor
 public class CasaDelTerror extends Atraccion {
     private boolean tieneEfectosEspeciales;
 
-    // Constructor con parámetros
+
     public CasaDelTerror(String nombre, int capacidad, int edadMinima, EstadoAtraccion estado, boolean tieneEfectosEspeciales) {
         super(nombre, capacidad, edadMinima, estado); // Cambié 'estado' a tipo EstadoAtraccion
         this.tieneEfectosEspeciales = tieneEfectosEspeciales;

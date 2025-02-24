@@ -9,13 +9,13 @@ import java.util.List;
 
 @Getter
 @Setter
-@NoArgsConstructor  // Constructor sin parámetros
+@NoArgsConstructor
 public class Visitante {
     private String nombre;
     private int edad;
     private List<Boleto> listaDeBoletos;
 
-    // Constructor con parámetros
+   
     public Visitante(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;

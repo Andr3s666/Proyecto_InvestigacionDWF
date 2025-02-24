@@ -11,9 +11,9 @@ public class Atraccion {
     private String nombre;
     private int capacidad;
     private int edadMinima;
-    private EstadoAtraccion estado; // Usar la enumeración aquí
+    private EstadoAtraccion estado;
 
-    // Constructor con parámetros
+
     public Atraccion(String nombre, int capacidad, int edadMinima, EstadoAtraccion estado) {
         this.nombre = nombre;
         this.capacidad = capacidad;
@@ -21,7 +21,7 @@ public class Atraccion {
         this.estado = estado;
     }
 
-    // Enumeración de los posibles estados de la atracción
+
     public enum EstadoAtraccion {
         ABIERTA,
         CERRADA,

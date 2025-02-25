@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @Setter
 @NoArgsConstructor
 public class Carrusel extends Atraccion {
+
     private int numeroDeCaballos;
 
 

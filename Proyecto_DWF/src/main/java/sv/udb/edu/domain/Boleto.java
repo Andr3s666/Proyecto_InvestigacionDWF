@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @Setter
 @NoArgsConstructor
 public class Boleto {
+
     private String tipo;
     private double precio;
     private Visitante visitante;

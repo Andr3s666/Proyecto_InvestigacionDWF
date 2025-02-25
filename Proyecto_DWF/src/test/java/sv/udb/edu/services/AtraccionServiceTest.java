@@ -34,7 +34,7 @@ public class AtraccionServiceTest {
     @Test
     public void PermitirIngresoAtraccion() {
         Visitante visitante = mock(Visitante.class);
-        when(visitante.getEdad()).thenReturn(12);
+        when(visitante.getEdad()).thenReturn(16);
 
 
         when(atraccionRepository.findById(1L)).thenReturn(java.util.Optional.of(atraccion));

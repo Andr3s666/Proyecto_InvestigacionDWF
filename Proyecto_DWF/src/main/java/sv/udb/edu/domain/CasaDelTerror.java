@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @Setter
 @NoArgsConstructor
 public class CasaDelTerror extends Atraccion {
+
     private boolean tieneEfectosEspeciales;
 
 

@@ -39,7 +39,7 @@ public class BoletoServiceTest {
         Boleto resultado = boletoService.comprarBoleto(visitante, "VIP");
 
 
-        assertEquals("VI", resultado.getTipo(), "El tipo de boleto no es correcto.");
+        assertEquals("VIP", resultado.getTipo(), "El tipo de boleto no es correcto.");
 
 
         assertEquals(100.0, resultado.getPrecio(), "El precio del boleto VIP es incorrecto.");
@@ -72,7 +72,7 @@ public class BoletoServiceTest {
     @Test
     public void testVentaBoletoAdulto() {
 
-        Boleto boleto = new Boleto("Adult", 50.0, visitante);
+        Boleto boleto = new Boleto("Adulto", 50.0, visitante);
 
 
         when(boletoRepository.save(any(Boleto.class))).thenReturn(boleto);
